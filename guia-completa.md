@@ -199,7 +199,7 @@ https://api.render.com/deploy/srv-d6oc0ltm5p6s73d84l7g?key=Cspxqghj514
 
 3. GitHub repo → **Settings → Secrets → New secret**:
     - `RENDER_DEPLOY_HOOK_URL` → pegar la URL
---un comentario
+--un comentario 1 
 ### Paso 5 — Actualizar URL en el frontend
 Usar la URL del paso 3 en `environment.prod.ts` (ver Paso 5 de Firebase).
 
