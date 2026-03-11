@@ -171,6 +171,7 @@ Ir a https://render.com → **Sign up with GitHub**
 1. Dashboard → **New → PostgreSQL**
 2. Nombre: `gastos-db` | Plan: **Free** → **Create Database**
 3. Copiar la **"External Database URL"** (la necesitarás en el paso 3)
+postgresql://gastos_db_0oxp_user:hjLjEfeQ7cqm2IMl1QEgDCAAH6l7fe7H@dpg-d6obue6r433s73cuj9g0-a.oregon-postgres.render.com/gastos_db_0oxp
 
 ### Paso 3 — Crear Web Service
 1. Dashboard → **New → Web Service**
@@ -187,12 +188,18 @@ Ir a https://render.com → **Sign up with GitHub**
 5. **Create Web Service** → esperar ~5 min
 6. Copiar la URL del servicio: `https://maneja-tus-gastos-api.onrender.com`
 
+https://maneja-tus-gastos-gamboa.onrender.com
+
+
 ### Paso 4 — Deploy Hook para GitHub Actions
 1. Web Service → **Settings → Deploy Hook**
 2. Copiar la URL (algo como `https://api.render.com/deploy/srv-xxx?key=yyy`)
+
+https://api.render.com/deploy/srv-d6oc0ltm5p6s73d84l7g?key=Cspxqghj514
+
 3. GitHub repo → **Settings → Secrets → New secret**:
     - `RENDER_DEPLOY_HOOK_URL` → pegar la URL
-
+--un comentario
 ### Paso 5 — Actualizar URL en el frontend
 Usar la URL del paso 3 en `environment.prod.ts` (ver Paso 5 de Firebase).
 
